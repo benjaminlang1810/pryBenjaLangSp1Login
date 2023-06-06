@@ -16,5 +16,13 @@ namespace pryBenjaLangSp1Login
         {
             InitializeComponent();
         }
+
+        
+
+        private void cmdIniciar_Click(object sender, EventArgs e)
+        {
+            frmLogin frmLogin = new frmLogin();
+            frmLogin.ShowDialog();
+        }
     }
 }

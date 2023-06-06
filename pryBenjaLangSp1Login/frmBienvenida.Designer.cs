@@ -28,12 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBienvenida));
+            this.lblBienvenido = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // lblBienvenido
+            // 
+            this.lblBienvenido.AutoSize = true;
+            this.lblBienvenido.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBienvenido.Location = new System.Drawing.Point(84, 37);
+            this.lblBienvenido.Name = "lblBienvenido";
+            this.lblBienvenido.Size = new System.Drawing.Size(639, 54);
+            this.lblBienvenido.TabIndex = 0;
+            this.lblBienvenido.Text = "Bienvenido a Sisterpart-SRL";
+            // 
+            // frmBienvenida
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "frmBienvenida";
+            this.ClientSize = new System.Drawing.Size(762, 153);
+            this.Controls.Add(this.lblBienvenido);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.Name = "frmBienvenida";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Bienvenida";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lblBienvenido;
     }
 }
